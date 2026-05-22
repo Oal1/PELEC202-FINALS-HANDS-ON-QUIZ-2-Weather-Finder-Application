@@ -3,7 +3,7 @@ import SearchBar from "./components/SearchBar";
 import WeatherCard from "./components/WeatherCard";
 import "./App.css";
 
-const API_KEY = "18919884313570bf428e2b89a74a8c13";
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 function App() {
   const [weather, setWeather] = useState(null);
